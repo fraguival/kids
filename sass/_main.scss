@@ -1,0 +1,49 @@
+.bg-color-light {
+    margin-bottom: 12px;
+    padding: 12px;
+}
+.bg-color-light img {
+    width: 50%;
+    margin: 0 auto;
+}
+.bg-color-light .title {
+    margin-left: 24px;
+}
+.bg-color p {
+    line-height: 1.8;
+}
+.author {
+    margin-bottom: 12px;
+    padding: 12px;
+}
+.bg-color {
+    padding: 12px;
+}
+@media (min-width: 768px) {
+    .flex-fixed {
+        display: flex;
+    }
+    .bg-color-light img {
+        width: 80%;
+    }
+    .bg-color-light p {
+        font-weight: bold;
+        text-align: center;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex-box:nth-child(1) {
+        order: 1;
+    }
+    .flex-box {
+        flex-basis: 45%;
+    }
+}
+@media (min-width: 800px) {
+    .author p, .bg-color p {
+        line-height: 3;
+    }
+}
+

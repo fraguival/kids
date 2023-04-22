@@ -1,0 +1,80 @@
+.header {
+    background-image: url('../images/showcase.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 580px;
+    border-radius: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+.menu {
+    position: absolute;
+    top: 48px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #aaa;
+    width: 60%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: height .5s linear;
+}
+.menu li {
+    font-weight: bold;
+    padding: 12px;
+}
+.menu li a {
+    color: #000;
+    font-size: 20px;
+}
+.change {
+    color: #000;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 24px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: .5s;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.view {
+    height: 202px;
+}
+.showcase p {
+    font-size: 24px;
+    margin-left: 24px;
+}
+.showcase h1 {
+    margin-left: 32px;
+}
+@media (min-width: 480px) {
+    .showcase h1 {
+        font-size: 48px;
+    }
+}
+@media (min-width: 768px) {
+    .change {
+        display: none;
+    }
+    .menu {
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+        height: auto;
+    }
+}
+
+
